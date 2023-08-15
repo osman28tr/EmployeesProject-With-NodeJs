@@ -1,0 +1,6 @@
+{
+    "employees":[
+        {"name":"osman tonbul","department":"bilişim","salary":15000,"id":1},
+        {"name":"osman tonbul2","department":"bilişim","salary":15000,"id":2}
+    ]
+}
