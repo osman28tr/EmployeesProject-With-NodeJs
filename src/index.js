@@ -26,4 +26,22 @@ function getAllEmployees(){
         ui.addAllEmployeesToUI(employees);
     }).catch(err=>console.log(err));
 }
+function addEmployee(e){
+    const employeeName = nameInput.value.trim();
+    const employeeDepartment = departmentInput.value.trim();
+    const employeeSalary = salaryInput.value.trim();
+    if(employeeName==="" || employeeDepartment === "" || employeeSalary === ""){
+        alert("lütfen tüm alanları doldurun");
+    }
+    else{
+        request.post({
+            name:employeeName,
+            department:employeeDepartment,
+            salary:Number(employeeSalary)
+        }).then(newemployee=>ui.addEmployeeToUI(newemployee))
+        .catch(err=>console.log(err));
+    }
+    ui.clearInputs();
+    e.preventDefault();
+}
 

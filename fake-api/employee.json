@@ -17,6 +17,18 @@
       "department": "bilişim",
       "salary": 15000,
       "id": 3
+    },
+    {
+      "name": "osman tonbul5",
+      "department": "bilişim",
+      "salary": "15000",
+      "id": 4
+    },
+    {
+      "name": "osman tonbul6",
+      "department": "bilişim",
+      "salary": 15000,
+      "id": 5
     }
   ]
 }

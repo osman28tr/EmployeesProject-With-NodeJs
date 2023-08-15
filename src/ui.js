@@ -22,4 +22,21 @@ export class UI{
         });
         this.employeesList.innerHTML = result;
     }
+    clearInputs(){
+        this.nameInput.value = "";
+        this.departmentInput.value = "";
+        this.salaryInput.value = "";
+    }
+    addEmployeeToUI(newemployee){
+        this.employeesList.innerHTML +=`
+        <tr>                                
+        <td>${newemployee.name}</td>
+        <td>${newemployee.department}</td>
+        <td>${newemployee.salary}</td>
+        <td>${newemployee.id}</td>
+        <td><a href="#" id = "update-employee" class= "btn btn-danger">Güncelle</a></td> 
+        <td> <a href="#" id = "delete-employee" class= "btn btn-danger">Sil</a></td>
+    </tr>
+        `
+    }
 }
