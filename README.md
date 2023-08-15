@@ -1,1 +1,1 @@
-﻿# Used packages: babel, webpack, jsonserverapi
+﻿# Used packages: babel, webpack, jsonserverapi,
